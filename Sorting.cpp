@@ -179,7 +179,7 @@ void Sorting::initialize()
 		{
 			if (lineNum > this->size) // too much input
 			{
-				throw RuntimeException("RuntimeException: too much input");
+				throw RuntimeException("File contains too much input");
 			}
 			if (lineNum == 0)
 			{
@@ -189,7 +189,7 @@ void Sorting::initialize()
 				}
 				catch(const std::invalid_argument& err) // can't parse line
 				{
-					throw RuntimeException("RuntimeException: invalid input");
+					throw RuntimeException("File contains invalid input");
 				}
 				this->bubbleArr = new double[this->size];
 				this->selectArr = new double[this->size];
@@ -214,14 +214,14 @@ void Sorting::initialize()
 				}
 				catch(const std::invalid_argument& err) // can't parse line
 				{
-					throw RuntimeException("RuntimeException: invalid input");
+					throw RuntimeException("File contains invalid input");
 				}
 			}
 			++lineNum;
 		}
 		if (lineNum < this->size)
 		{
-			throw RuntimeException("RuntimeException: too little input");
+			throw RuntimeException("File contains too little input");
 		}
 	}
 }
