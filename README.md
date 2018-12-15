@@ -29,3 +29,5 @@ RuntimeException.h
 
 ### Used resources
 https://en.cppreference.com/w/cpp/chrono/duration/duration_cast
+
+Data Structures and Algorithms in C++ by Michael T. Goodrich, Roberto Tamassia, and David Mount [Book]
