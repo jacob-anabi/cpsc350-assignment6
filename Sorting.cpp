@@ -219,7 +219,7 @@ void Sorting::initialize()
 			}
 			++lineNum;
 		}
-		if (lineNum < this->size)
+		if ((lineNum-1) < this->size)
 		{
 			throw RuntimeException("File contains too little input");
 		}
