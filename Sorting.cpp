@@ -224,4 +224,8 @@ void Sorting::initialize()
 			throw RuntimeException("File contains too little input");
 		}
 	}
+	else
+	{
+		throw RuntimeException("No file found");
+	}
 }
