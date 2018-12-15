@@ -58,13 +58,13 @@ void Sorting::timeit()
 	std::chrono::duration<double, std::milli> qTime_ms = quickEnd - quickStart;   // quick sort time (ms)
 
 	// printing times
-	std::cout << "Bubble Sort Time:\n" <<
+	std::cout << "Bubble Sort Delta Time:\n" <<
 	bTime_ms.count() << " ms\n\n" <<
-	"Selection Sort Time:\n" <<
+	"Selection Sort Delta Time:\n" <<
 	sTime_ms.count() << " ms\n\n" <<
-	"Insertion Sort Time:\n" <<
+	"Insertion Sort Delta Time:\n" <<
 	iTime_ms.count() << " ms\n\n" <<
-	"Quick Sort Time:\n" <<
+	"Quick Sort Delta Time:\n" <<
 	qTime_ms.count() << " ms" << std::endl;
 	
 }
